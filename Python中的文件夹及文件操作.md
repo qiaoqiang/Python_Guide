@@ -2,24 +2,24 @@
 
 ## os.path模块
 
-| 函数           | 功能       |
-| ------------ | -------- |
-| abspath      | 获取文件绝对路径 |
-| basename     | 获取文件的路径  |
-| commonprefix |          |
-| dirname      | 获取文件夹名称  |
-| exists       | 判断文件是否存在 |
-| expanduser   |          |
-| expandvars   |          |
-| geatime      |          |
-| getmtime     |          |
-| getsize      |          |
-| isabs        |          |
-| isdir        |          |
-| isfile       |          |
-|              |          |
-|              |          |
-|              |          |
+| 函数           | 功能                       |
+| ------------ | ------------------------ |
+| abspath      | 获取文件绝对路径                 |
+| basename     | 获取文件的路径                  |
+| commonprefix | 入参为路径名称的列表，返回最长的公共路径前缀组合 |
+| dirname      | 获取文件夹名称                  |
+| exists       | 判断文件是否存在                 |
+| expanduser   | 将~扩展成真实路径                |
+| expandvars   | 用环境变量中的$HOME扩展成真实路径      |
+| getatime     | 获取文件的acces时间             |
+| getmtime     | 获取文件的修改时间                |
+| getsize      | 获取文件的size                |
+| isabs        | 是否是绝对路径                  |
+| isdir        | 是否是文件夹                   |
+| isfile       | 是否是文件                    |
+|              |                          |
+|              |                          |
+|              |                          |
 
 python 中os.path模块用于操作文件或文件夹
 
@@ -54,9 +54,31 @@ print size/1024
 
 ## os中的处理函数
 
-| 函数      | 功能   |
-| ------- | ---- |
-| os.walk | 遍历功能 |
+| 函数                 | 功能                 |
+| ------------------ | ------------------ |
+| abort              | 不返回。立即中断           |
+| access(path, mode) | 可以返回True，不然返回False |
+| chdir              | ch                 |
+| chmod              |                    |
+| close              |                    |
+| os.walk            | 遍历功能               |
+| os.getcwd          | 获取当前目录             |
+| os.listdir         | 列出目录下文件            |
+| os.chdir           | 切换到某个目录            |
+| os.remove          | 删除文件               |
+|                    |                    |
+|                    |                    |
+|                    |                    |
+|                    |                    |
+|                    |                    |
+|                    |                    |
+|                    |                    |
+|                    |                    |
+|                    |                    |
+|                    |                    |
+|                    |                    |
+| os.walk            |                    |
+| write              | 写文件内容              |
 
 
 
