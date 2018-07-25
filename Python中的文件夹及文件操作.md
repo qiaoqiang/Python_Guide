@@ -54,31 +54,43 @@ print size/1024
 
 ## os中的处理函数
 
-| 函数                 | 功能                 |
-| ------------------ | ------------------ |
-| abort              | 不返回。立即中断           |
-| access(path, mode) | 可以返回True，不然返回False |
-| chdir              | ch                 |
-| chmod              |                    |
-| close              |                    |
-| os.walk            | 遍历功能               |
-| os.getcwd          | 获取当前目录             |
-| os.listdir         | 列出目录下文件            |
-| os.chdir           | 切换到某个目录            |
-| os.remove          | 删除文件               |
-|                    |                    |
-|                    |                    |
-|                    |                    |
-|                    |                    |
-|                    |                    |
-|                    |                    |
-|                    |                    |
-|                    |                    |
-|                    |                    |
-|                    |                    |
-|                    |                    |
-| os.walk            |                    |
-| write              | 写文件内容              |
+| 函数                    | 功能                           |
+| --------------------- | ---------------------------- |
+| os.abort              | 不返回。立即中断                     |
+| os.access(path, mode) | 可以返回True，不然返回False           |
+| os.chdir              | 改变运行目录到指定路径                  |
+| os.chmod              | 改变路径的owner和group id权限        |
+| os.chroot             | 改变root文件夹                    |
+| os.close              | 关闭文件描述符                      |
+| os.closerange         | 关闭一个范围的文件描述符，忽略错误            |
+| os.fchdir             | 切到文件描述符所指向的路径，必须是一文件夹        |
+| os.fchmod             | 改变指定文件描述符的权限                 |
+| os.fchown             | 改变描述符的owner和group id。        |
+| os.fdatasync          | 强制写入，不强制更新元数据                |
+| os.fdopen             | 返回一个连接了文件描述符的打开的文件对象         |
+| os.fsync              | 强制文件描述符对应文件写入到磁盘             |
+| os.getcwd             | 返回当前工作路径的字符串                 |
+| os.getcwdu            | 返回当前工作路径的unicode字符串          |
+| os.lchown             | 改变路径的owner和group id，此函数不追踪链接 |
+| os.link               | 创建一个文件的硬链接                   |
+| os.walk               | 遍历功能                         |
+| os.getcwd             | 获取当前目录                       |
+| os.listdir            | 列出目录下文件                      |
+| os.chdir              | 切换到某个目录                      |
+| os.remove             | 删除文件                         |
+|                       |                              |
+|                       |                              |
+|                       |                              |
+|                       |                              |
+|                       |                              |
+|                       |                              |
+|                       |                              |
+|                       |                              |
+|                       |                              |
+|                       |                              |
+|                       |                              |
+| os.walk               |                              |
+| write                 | 写文件内容                        |
 
 
 
@@ -166,6 +178,11 @@ for (root,dirs,files) in os.walk(path) :
 
 ### 文件删除
 
+```
+file = "/root/1.txt"
+os.remove(file)
+```
+
 
 
 ### 文件修改
@@ -174,9 +191,35 @@ for (root,dirs,files) in os.walk(path) :
 
 ### 文件读取
 
+```
+file1 = "/root/1.txt"
+open(file1, 'r')
+
+file(file1, 'r')
+
+```
+
 
 
 ### 文件属性
+
+
+
+
+
+### 文件锁
+
+
+
+
+
+## 文件夹及文件的压缩
+
+
+
+## 压缩文件的内容提取
+
+
 
 
 
