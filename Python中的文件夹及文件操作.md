@@ -507,7 +507,29 @@ for (root,dirs,files) in os.walk(path) :
 　　　　name = d + ".eml"
 　　　　os.rename(d, name)
 
+### os.chmod
 
+os.chmod(path,mode) 这个方法应该很简单，只需要2个参数，一个是路径，一个是说明路径的模式，下面列出了这个用法中可以使用的一些常用的模式：
+
+- **stat.S_ISUID:** Set user ID on execution. 不常用
+- **stat.S_ISGID:** Set group ID on execution. 不常用
+- **stat.S_ENFMT:** Record locking enforced. 不常用
+- **stat.S_ISVTX:** Save text image after execution. 在执行之后保存文字和图片
+- **stat.S_IREAD:** Read by owner. 对于拥有者读的权限
+- **stat.S_IWRITE:** Write by owner. 对于拥有者写的权限
+- **stat.S_IEXEC:** Execute by owner. 对于拥有者执行的权限
+- **stat.S_IRWXU:** Read, write, and execute by owner. 对于拥有者读写执行的权限
+- **stat.S_IRUSR:** Read by owner. 对于拥有者读的权限
+- **stat.S_IWUSR:** Write by owner. 对于拥有者写的权限
+- **stat.S_IXUSR:** Execute by owner. 对于拥有者执行的权限
+- **stat.S_IRWXG:** Read, write, and execute by group. 对于同组的人读写执行的权限
+- **stat.S_IRGRP:** Read by group. 对于同组读的权限
+- **stat.S_IWGRP:** Write by group. 对于同组写的权限
+- **stat.S_IXGRP:** Execute by group. 对于同组执行的权限
+- **stat.S_IRWXO:** Read, write, and execute by others. 对于其他组读写执行的权限
+- **stat.S_IROTH:** Read by others. 对于其他组读的权限
+- **stat.S_IWOTH:** Write by others. 对于其他组写的权限
+- **stat.S_IXOTH:** Execute by others. 对于其他组执行的权限
 
 
 
